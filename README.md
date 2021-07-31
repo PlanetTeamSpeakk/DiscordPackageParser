@@ -37,5 +37,5 @@ Here all your DMs, servers and server folders are located. Every message you eve
 <img src="https://i.imgur.com/fS2Q37Y.png" width="576" height="384" />
 
 ### Search
-Here you can search messages you sent by content. You can search for anything you like or find where you made that great argument or cited that old quote that you can only partially remember. It also shows you how many messages you sent on Discord in total.
+Here you can search messages you sent by content. You can search for anything you like or find where you made that great argument or cited that old quote that you can only partially remember. It also shows you how many messages you sent on Discord in total.  
 <img src="https://i.imgur.com/GIxfVRy.png" width="576" height="384" />
