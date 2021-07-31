@@ -1,0 +1,40 @@
+buildscript {
+    dependencies {
+        classpath 'com.github.jengelman.gradle.plugins:shadow:6.0.0'
+    }
+    repositories {
+        mavenCentral()
+    }
+}
+
+plugins {
+    id 'java'
+    id 'application'
+}
+
+apply plugin: 'com.github.johnrengelman.shadow'
+
+tasks.build.dependsOn tasks.shadowJar
+
+group 'com.ptsmods'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'org.jetbrains:annotations:21.0.1'
+    implementation group: 'com.google.code.gson', name: 'gson', version: '2.8.6'
+    implementation group: 'com.opencsv', name: 'opencsv', version: '3.1'
+    implementation group: 'org.commonmark', name: 'commonmark', version: '0.17.1'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
+}
+
+application {
+    mainClassName = 'com.ptsmods.packageparser.PackageParser'
+}
+
+targetCompatibility = '8'
+sourceCompatibility = '8'
